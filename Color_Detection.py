@@ -36,8 +36,7 @@ while True:
         mask = cv2.dilate(mask, None, iterations = 2)
         cv2.imshow("Mask + erozyon ve genisleme",mask)
         
-        # farklı sürüm için
-        # (_, contours,_) = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
 
         # kontur
         (contours,_) = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
